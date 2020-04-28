@@ -43,11 +43,11 @@ const Stat = styled.div`
   }
   p:first-child {
     color: hsl(240deg, 10%, 90%);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
   }
   p:nth-child(2) {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 900;
     color: white;
   }
