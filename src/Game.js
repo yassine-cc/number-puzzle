@@ -6,28 +6,17 @@ import Info from "./components/Info";
 import controlGame from "./utils/gameControl";
 import { initGame } from "./store/actions";
 
-const Page = styled.div`
-  position: absolute;
-  padding: 0px;
-  margin: 0px;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: hsl(60, 25%, 95%);
-`;
 const GameContainer = styled.div`
-  margin: 100px auto;
+  margin: auto;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 600px;
   box-sizing: border-box;
 
   @media screen and (max-width: 600px) {
     margin: 30px auto;
     width: 450px;
-    height: 540px;
   }
 `;
 
@@ -45,16 +34,14 @@ function Game() {
     };
   }, [dispatch]);
   return (
-    <Page>
-      <GameContainer>
-        <Info moves={state.moves} best={state.best} />
-        <Board
-          board={state.currentBoard}
-          movedCell={state.movedCell}
-          movedFrom={state.movedFrom}
-        />
-      </GameContainer>
-    </Page>
+    <GameContainer>
+      <Info moves={state.moves} best={state.best} />
+      <Board
+        board={state.currentBoard}
+        movedCell={state.movedCell}
+        movedFrom={state.movedFrom}
+      />
+    </GameContainer>
   );
 }
 
