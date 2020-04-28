@@ -50,7 +50,7 @@ const rootReducer = (state = defaultBoard, action) => {
 
       if (newState.gameIsWon) {
         newState.best =
-          newState.moves > newState.best ? newState.moves : newState.best;
+          newState.moves < newState.best ? newState.moves : newState.best;
       }
 
       localStorage.setItem(
