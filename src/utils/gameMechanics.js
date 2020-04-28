@@ -1,8 +1,8 @@
 const moveCoordinates = [
-  [0, -1],
-  [1, 0],
   [0, 1],
   [-1, 0],
+  [0, -1],
+  [1, 0],
 ];
 
 const getEmptyCell = (board) => board.indexOf(0);

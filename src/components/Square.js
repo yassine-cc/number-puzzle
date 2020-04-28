@@ -24,7 +24,7 @@ const Tile = styled.div`
   // border-radius: 7px;
   background-color: hsl(240deg, 30%, 80%);
   opacity: 1;
-  @keyframes left {
+  @keyframes right {
     0% {
       transform: translateX(100%);
     }
@@ -32,7 +32,7 @@ const Tile = styled.div`
       transform: translateX(0px);
     }
   }
-  @keyframes right {
+  @keyframes left {
     0% {
       transform: translateX(-100%);
     }
@@ -40,7 +40,7 @@ const Tile = styled.div`
       transform: translateX(0px);
     }
   }
-  @keyframes up {
+  @keyframes down {
     0% {
       transform: translateY(100%);
     }
@@ -48,7 +48,7 @@ const Tile = styled.div`
       transform: translateY(0px);
     }
   }
-  @keyframes down {
+  @keyframes up {
     0% {
       transform: translateY(-100%);
     }
