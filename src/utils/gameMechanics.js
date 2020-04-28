@@ -40,9 +40,11 @@ const swap = ([...board], cell1, cell2) => {
 export const makeMove = ([...board], move) => {
   const emptyCell = getEmptyCell(board);
   if (!canMove(board, move)) return { moved: false, board };
+  const destinationCell = getDestinationCell(emptyCell, move);
   return {
     moved: true,
-    board: swap(board, emptyCell, getDestinationCell(emptyCell, move)),
+    board: swap(board, emptyCell, destinationCell),
+    movedCell: emptyCell,
   };
 };
 

@@ -29,7 +29,11 @@ function Game() {
   }, [dispatch]);
   return (
     <GameContainer>
-      <Board board={state.currentBoard} />
+      <Board
+        board={state.currentBoard}
+        movedCell={state.movedCell}
+        movedFrom={state.movedFrom}
+      />
       <Info moves={state.moves} />
     </GameContainer>
   );

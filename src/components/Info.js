@@ -4,7 +4,7 @@ import { initGame } from "../store/actions";
 import styled from "styled-components";
 
 const Div = styled.div`
-  box-shadow: 1px 1px 8px hsl(0deg, 90%, 90%);
+  box-shadow: 1px 1px 8px hsl(240deg, 90%, 90%);
   border-radius: 10px;
   padding: 5px;
   flex: auto;
@@ -22,24 +22,24 @@ const Stat = styled.div`
   margin-bottom: 20px;
   p {
     margin: 5px;
-    color: hsl(0deg, 70%, 70%);
+    color: hsl(240deg, 70%, 70%);
   }
 `;
 
 const Button = styled.button`
   font-size: 18px;
   color: white;
-  background-color: hsl(0deg, 80%, 80%);
+  background-color: hsl(240deg, 80%, 80%);
   border: none;
   border-radius: 20px;
   padding: 5px 10px;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   outline: none;
   &:hover {
-    background-color: hsl(0deg, 75%, 75%);
+    background-color: hsl(240deg, 75%, 75%);
   }
   &:active {
-    background-color: hsl(0deg, 70%, 70%);
+    background-color: hsl(240deg, 70%, 70%);
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
     transform: translateY(2px);
   }
