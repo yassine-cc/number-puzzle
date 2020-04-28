@@ -47,7 +47,7 @@ function Game() {
   return (
     <Page>
       <GameContainer>
-        <Info moves={state.moves} />
+        <Info moves={state.moves} best={state.best} />
         <Board
           board={state.currentBoard}
           movedCell={state.movedCell}

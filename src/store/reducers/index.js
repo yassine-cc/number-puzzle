@@ -4,6 +4,7 @@ const { INIT_GAME, MOVE } = constants;
 
 const endBoard = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0];
 const defaultBoard = {
+  best: 0,
   moves: 0,
   gameIsWon: false,
   movedFrom: undefined,
@@ -35,6 +36,11 @@ const rootReducer = (state = defaultBoard, action) => {
       } else {
         newState.movedFrom = undefined;
         newState.movedCell = undefined;
+      }
+
+      if (newState.gameIsWon) {
+        newState.best =
+          newState.moves > newState.best ? newState.moves : newState.best;
       }
       return newState;
     default:

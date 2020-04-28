@@ -12,6 +12,7 @@ const Cell = styled.div`
   background-color: hsl(240deg, 20%, 70%);
 `;
 const Tile = styled.div`
+  font-family: sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
