@@ -3,22 +3,21 @@ import styled from "styled-components";
 import Square from "./Square";
 
 const Container = styled.div`
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
+  // position: relative;
+  // width: 100%;
+  // padding-top: 100%;
 `;
 const Grid = styled.div`
   padding: 15px;
-  position: absolute;
+  // position: absolute;
   background-color: hsl(240, 20%, 65%);
 
   border-radius: 5px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  // top: 0px;
+  // left: 0px;
+  // right: 0px;
+  // bottom: 0px;
   box-sizing: border-box;
-  background-color: ;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
