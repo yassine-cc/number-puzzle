@@ -7,11 +7,11 @@ import controlGame from "./utils/gameControl";
 import { initGame } from "./store/actions";
 
 const Page = styled.div`
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   background-color: hsl(60, 25%, 95%);

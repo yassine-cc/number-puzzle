@@ -8,8 +8,6 @@ const Container = styled.div`
   padding-top: 100%;
 `;
 const Grid = styled.div`
-  // display: flex;
-  // flex-wrap: wrap;
   padding: 15px;
   position: absolute;
   background-color: hsl(240, 20%, 65%);
@@ -20,7 +18,6 @@ const Grid = styled.div`
   right: 0px;
   bottom: 0px;
   box-sizing: border-box;
-  // box-shadow: 2px 2px 16px hsl(240deg, 90%, 90%);
   background-color: ;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
