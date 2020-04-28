@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Cell = styled.div`
-  width: 25%;
-  height: 25%;
+  // width: 25%;
+  // height: 25%;
   box-sizing: border-box;
-  border: 0.5px solid hsl(240deg, 50%, 90%);
+  // border: 0.5px solid hsl(240deg, 50%, 90%);
   font-size: 2rem;
   font-weight: 700;
-  border-radius: 7px;
+  // border-radius: 7px;
   background-color: hsl(240deg, 20%, 70%);
 `;
 const Tile = styled.div`
@@ -18,9 +18,9 @@ const Tile = styled.div`
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 0.3px solid hsl(240deg, 30%, 50%);
+  // border: 0.3px solid hsl(240deg, 30%, 50%);
   color: hsl(240deg, 0%, 100%);
-  border-radius: 7px;
+  // border-radius: 7px;
   background-color: hsl(240deg, 30%, 80%);
   opacity: 1;
   @keyframes left {
@@ -56,7 +56,7 @@ const Tile = styled.div`
     }
   }
   ${({ animate, direction }) =>
-    animate ? `animation: ${direction} .3s forwards;` : ``}
+    animate ? `animation: ${direction} .1s forwards;` : ``}
 `;
 // const Text = styled.p``;
 const Empty = styled.div`

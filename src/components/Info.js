@@ -4,7 +4,7 @@ import { initGame } from "../store/actions";
 import styled from "styled-components";
 
 const Div = styled.div`
-  box-shadow: 1px 1px 8px hsl(240deg, 90%, 90%);
+  // box-shadow: 1px 1px 8px hsl(240deg, 90%, 90%);
   border-radius: 10px;
   padding: 5px;
   flex: auto;
@@ -31,8 +31,9 @@ const Button = styled.button`
   color: white;
   background-color: hsl(240deg, 80%, 80%);
   border: none;
-  border-radius: 20px;
-  padding: 5px 10px;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 10px 15px;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   outline: none;
   &:hover {
@@ -53,7 +54,7 @@ export default function Info({ moves }) {
         <p>{moves}</p>
       </Stat>
       <Stat>
-        <Button onClick={() => dispatch(initGame())}> Start a new Game</Button>
+        <Button onClick={() => dispatch(initGame())}>New Game</Button>
       </Stat>
     </Div>
   );
