@@ -22,6 +22,7 @@ const Column = styled.div`
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  margin-bottom: 30px;
 `;
 const Stat = styled.div`
   margin: 0px auto;
