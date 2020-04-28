@@ -16,7 +16,15 @@ const defaultBoard = {
 const rootReducer = (state = defaultBoard, action) => {
   switch (action.type) {
     case INIT_GAME:
-      return { ...defaultBoard, currentBoard: generateGame(endBoard) };
+      const savedGame = JSON.parse(localStorage.getItem("state"));
+      if (!action.payload && savedGame) {
+        return savedGame;
+      }
+      return {
+        ...defaultBoard,
+        currentBoard: generateGame(endBoard),
+        best: state.best,
+      };
     case MOVE:
       if (state.gameIsWon) return state;
       const newState = {
@@ -42,6 +50,15 @@ const rootReducer = (state = defaultBoard, action) => {
         newState.best =
           newState.moves > newState.best ? newState.moves : newState.best;
       }
+
+      localStorage.setItem(
+        "state",
+        JSON.stringify({
+          ...newState,
+          movedFrom: undefined,
+          movedCell: undefined,
+        })
+      );
       return newState;
     default:
       return state;

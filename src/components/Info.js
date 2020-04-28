@@ -91,7 +91,7 @@ export default function Info({ moves, best }) {
       </Row>
 
       <Row>
-        <Button onClick={() => dispatch(initGame())}>New Game</Button>
+        <Button onClick={() => dispatch(initGame(true))}>New Game</Button>
       </Row>
     </Column>
   );

@@ -1,7 +1,7 @@
 import constants from "../constants";
 const { INIT_GAME, MOVE, MOVES } = constants;
 
-export const initGame = () => ({ type: INIT_GAME });
+export const initGame = (isNew) => ({ type: INIT_GAME, payload: isNew });
 
 export const moveUp = () => ({ type: MOVE, payload: MOVES.up });
 
