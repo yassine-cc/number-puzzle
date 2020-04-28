@@ -20,11 +20,13 @@ const rootReducer = (state = defaultBoard, action) => {
       if (!action.payload && savedGame) {
         return savedGame;
       }
-      return {
+      const newGame = {
         ...defaultBoard,
         currentBoard: generateGame(endBoard),
         best: state.best,
       };
+      localStorage.setItem("state", JSON.stringify(newGame));
+      return newGame;
     case MOVE:
       if (state.gameIsWon) return state;
       const newState = {
